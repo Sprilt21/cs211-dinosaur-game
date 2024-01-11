@@ -1,0 +1,76 @@
+
+
+  ☆.。.:*・°☆.。.:*・°
+     DINOSAUR GAME !!!
+  ☆.。.:*・°☆.。.:*・°
+
+SPECIFICATIONS:
+
+1. the game state is dead/static until the space bar or arrow key is pressed*
+2. the dino jumps up when either the up arrow key or space bar is pressed*
+3. three different types of obstacles of different sizes and heights*
+4. obstacles spawn on the right side of the screen and decrease in x value until
+reaching the left side of the screen (to look like they are moving); y values to
+ not change*
+5. when dino hits an obstacle, the game state changes to dead*
+6. once dead, the game will reset to initial state when space bar or arrow key
+is pressed*
+7. dino has gravity*
+8. speed of obstacles increases as the game progresses*
+9. counter records score based on how long the game stays in the active state*
+10. counter resets when game is reset but stores highest score *
+11. on every frame the sprite changes to look like it is running
+12. the background continuously moves in the negative x direction to look like
+the dino is traveling forward
+
+ ☆.。.:*・°☆.。.:*・°
+
+TO-DO LIST:
+
+1. make a player class/baddie class
+
+2. model holds:
+    -normal shit to make a game
+    -player dude
+    -a list of baddies
+    -counter tracker
+
+3. player:
+    -fields:
+        -posn
+        -velocity
+        -is deadge or not
+        -the images
+            -which image its on (0 or 1 probs)
+
+    -space/up with jump (controller)
+    -figure out how the fuck to do grabity
+        -if jumping, vertical velocity goes down D:
+        -when hit floor, vertical velocity become zero (shocking!)
+    - game over
+        - when touch baddie
+    - score -> time elapsed (no. of frames ??? idek we figure this out later
+    lol)
+        -after deadge, if score > counter tracker, make it the new high score
+
+4. baddie:
+    -have list of 3/4 baddies (nicki minaj, ice spice, megan thee stallion,
+    cardi b (optional))
+        -diff heights
+    -when go to opposite side of screenie, teleport them to other side of
+    screenie again
+        -make them pause for random amt of seconds/frames
+
+5. view
+    - draw
+
+
+
+
+
+
+
+
+
+
+
